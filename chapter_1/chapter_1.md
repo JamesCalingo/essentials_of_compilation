@@ -1,10 +1,10 @@
-## Chapter 1: Preliminaries
+# Chapter 1: Preliminaries
 
-# 1.1: Abstract Syntax Trees
+## 1.1: Abstract Syntax Trees
 
 We start by taking a look at Abstract Syntax Trees - or how compilers decide what each part of a program statement is trying to do.
 
-My first instinct was to recreate the Constant class from the book and then create an instance of it to see it in action. When I tried to I got this:
+My first instinct was to recreate the Constant class from the book and then create an instance of it to see it in action. When I tried to get a `Constant()` I got this:
 
 ```
 <__main__.Constant object at 0x1021d0350>
