@@ -4,4 +4,4 @@ There's something that's not quite in the book that is important to actually doi
 
 My first instinct was to create the Constant class from the book and then create an instance
 
-<\__main__.Constant object at 0x1021d0350>
+<\_\_main\__.Constant object at 0x1021d0350>
