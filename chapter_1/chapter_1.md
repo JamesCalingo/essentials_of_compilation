@@ -18,5 +18,21 @@ Another fun note: maybe it's because it's been WAY TOO LONG since I defined clas
 
 This section seems to be more of a theoretical chapter rather than a practical one, but it's still important to understand the theory behind what's going on when compiling a program. However, I'll be honest: I'm not *entirely* sure what's going on here.
 
-In it, the basic rules are laid out using a smaller language. While going over every single rule here might be a bit pedantic, I think going over the "gist" of the ruleset may help: It divides everything we've declared so far into *expressions* and *statements*. Most of what we have from the last module are in the *expressions* category.
+...Or at least I wasn't on my first read through. This leads me to some more general advice I think most people 
+
+Don't be afraid to wait.
+
+I think with how employers are asking for these wide skillsets nowadays, people are insanely tempted to move on from one topic to the next
+
+Anyway, back to THIS book, the basic rules are laid out using a "smaller language" called L<sub>int</sub>. While going over every single rule here might be a bit pedantic, I think going over the "gist" of the ruleset may help: It divides everything we've declared so far into *expressions* and *statements*. Most of what we have from the last module are in the *expressions* category: constants, our operators, and an empty function call are expressions, while printing things, as well as stating a variable itself, are statements.
+
+In addition, we add a `Module` class to tie everything together.
+
+## 1.3: Pattern Matching
+
+We start by introduing something rather new: Python's `match` keyword. It was added in Python 3.10 back in 2021, and is, in essence, a Python version of the `switch` statement found in other languages like JavaScript (i.e. a way ot grouping if/elif statements).
+
+As an example of this, the book takes all of the classes we've been using so far and determines whether or not they are leaf nodes of an AST (i.e. is there more logic below ). In our case, the Constant and Call classes are leaves, but the unary and binary operators are not as there is other logic we need to figure out before we hit the leaf nodes.
+
+(Coincidentally, I tried writing this out and got an error that immplied that I wasn't using Python 3.10 or newer; I checked my version and it was 3.11 and the code ran fine)
 
