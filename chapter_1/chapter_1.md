@@ -18,11 +18,11 @@ Another fun note: maybe it's because it's been WAY TOO LONG since I defined clas
 
 This section seems to be more of a theoretical chapter rather than a practical one, but it's still important to understand the theory behind what's going on when compiling a program. However, I'll be honest: I'm not *entirely* sure what's going on here.
 
-...Or at least I wasn't on my first read through. This leads me to some more general advice I think most people 
+...Or at least I wasn't on my first read through. This leads me to some more general advice I think would be helpful to those trying to do something similar to this:
 
 Don't be afraid to wait.
 
-I think with how employers are asking for these wide skillsets nowadays, people are insanely tempted to move on from one topic to the next
+I think with how employers are asking for these wide skillsets nowadays, people are insanely tempted to move on from one topic to the next as quickly as possible to get those "skills" onto their resume, but the reality is that this can lead to not actually knowing said skill - something that can come out in interviews. If you're trying to truly understand a concept, then spending time with it until you're ready to move on will help you make sure that you have a good understanding of the concept and can use it to build up to other, more challenging topics.
 
 Anyway, back to THIS book, the basic rules are laid out using a "smaller language" called L<sub>int</sub>. While going over every single rule here might be a bit pedantic, I think going over the "gist" of the ruleset may help: It divides everything we've declared so far into *expressions* and *statements*. Most of what we have from the last module are in the *expressions* category: constants, our operators, and an empty function call are expressions, while printing things, as well as stating a variable itself, are statements.
 
