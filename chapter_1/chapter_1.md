@@ -36,3 +36,10 @@ As an example of this, the book takes all of the classes we've been using so far
 
 (Coincidentally, I tried writing this out and got an error that immplied that I wasn't using Python 3.10 or newer; I checked my version and it was 3.11 and the code ran fine)
 
+## 1.4: Recursive Functions
+
+For those who don't know (although you) really should, recursion is when a function calls itself when running. While it may seem like it's only useful in the world of data structures and algorithms, I have used recursion for front end work in the past.
+
+Here, we check if we have valid logic in our program by making sure that our expressions are written with valid inputs (i.e. the Constant and input_int expressions).
+
+This section also features a powerful Python feature that doesn't have a clear analog in other languages: list comprehension! List comprehension is basically a form of a forEach() loop from other languages where you take a list (or array if you're in something like JavaScript) and run a function on it. It's useful for writing "cleaner" code, and I'm unaware of any other languages that have anything similar to it (I could've used it for some React stuff early in my career...).
