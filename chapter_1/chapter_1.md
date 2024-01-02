@@ -1,5 +1,9 @@
 # Chapter 1: Preliminaries
 
+First of all, we should discuss what's actually going on with a compiler by discussing concrete and abstract syntax.
+
+Take, for example, this MarkDown file you're currently looking at. 
+
 ## 1.1: Abstract Syntax Trees
 
 We start by taking a look at Abstract Syntax Trees - or how compilers decide what each part of a program statement is trying to do.
@@ -43,3 +47,13 @@ For those who don't know (although you) really should, recursion is when a funct
 Here, we check if we have valid logic in our program by making sure that our expressions are written with valid inputs (i.e. the Constant and input_int expressions).
 
 This section also features a powerful Python feature that doesn't have a clear analog in other languages: list comprehension! List comprehension is basically a form of a forEach() loop from other languages where you take a list (or array if you're in something like JavaScript) and run a function on it. It's useful for writing "cleaner" code, and I'm unaware of any other languages that have anything similar to it (I could've used it for some React stuff early in my career...).
+
+## 1.5: Interpreters
+
+We start discussing the idea of interpreters in this section.
+
+Again, let's look at the language this file is written in: MarkDown. GitHub has a feature that interprets certain MarkDown features and translates them to look "different" upon presentation (i.e. it essentially HTML's the raw data). For example, assuming you're not looking at the raw data, then typing \*hi!\* will end up looking like *hi!* due to how MarkDown interprets stuff surrounded by the * character (or _).
+
+Of course, one of the most important things about this whole exercise is interpreting vs. compiling. There's a
+
+Something I didn't realize until I got to this section: We have the standard `print()` function available to us, but we also have another function called `input_int()`. These are the only two functions available to us that aren't in Python's `ast` module (except for a few others).
