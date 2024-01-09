@@ -54,6 +54,8 @@ We start discussing the idea of interpreters in this section.
 
 Again, let's look at the language this file is written in: MarkDown. GitHub has a feature that interprets certain MarkDown features and translates them to look "different" upon presentation (i.e. it essentially HTML's the raw data). For example, assuming you're not looking at the raw data, then typing \*hi!\* will end up looking like *hi!* due to how MarkDown interprets stuff surrounded by the * character (or _).
 
-Of course, one of the most important things about this whole exercise is interpreting vs. compiling. There's a
+Something I didn't realize until I got to this section: We have the standard `print()` function available to us, but we also have another function called `input_int()`. These are the only two functions available to us that aren't in Python's `ast` module (except for a few others). However, this section introduced a group of functions that are also not part of Python's standard library; they're available in the book's support code, but the file that contains them has utils for EVERYTHING in the book. For now, I'm only copying the ones that are pertinent to this chapter: `add64()`, `sub64()`, `neg64()`, and `input_int()`, along with some other things that they require.
 
-Something I didn't realize until I got to this section: We have the standard `print()` function available to us, but we also have another function called `input_int()`. These are the only two functions available to us that aren't in Python's `ast` module (except for a few others). However, this section introduced a group of functions that are also not part of Python's standard library; they're available in the book's support code, but the file that contains them has utils for EVERYTHING in the book. For now, I'm only copying the ones that are pertinent to this chapter: `add64()`, 
+## 1.6 Example Compiler: A Partial Evaluator
+
+Finally, we get into partial evaluation. The book uses the idea of computing 5 + 3 vs just putting in 8 to explain how the compiler translates programs: since we have to do something with 5 + 3, an AST is created for it.
